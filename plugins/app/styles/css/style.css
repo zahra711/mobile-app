@@ -1,0 +1,132 @@
+body {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+body header {
+  border-bottom: 1px solid gray;
+}
+body header .nav-toggler {
+  margin: 1rem;
+  background-color: transparent;
+  border-style: none;
+}
+body main {
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+body main nav {
+  position: absolute;
+  left: 0px;
+  top: 62px;
+  height: 100%;
+  display: none;
+  background-color: #ffdae0;
+  flex-direction: column;
+  padding: 10px;
+}
+body main nav .nav-item {
+  margin-bottom: 0.5rem;
+}
+body main nav.show {
+  display: flex;
+}
+body main .content .filter-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+  padding: 0.3rem;
+}
+body main .content .filter-bar .filter-item {
+  border: 0.1rem solid hotpink;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+  margin: 0 0.5rem 0.5rem 0;
+  background-color: #ffeef1;
+}
+body main .content .products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+body main .content .products .product {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 0 0.5rem 0.5rem 0;
+}
+body main .content .products .product:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+body main .content .products .product.sold-out button {
+  background-color: gray;
+  cursor: not-allowed !important;
+}
+body main .content .products .product .price {
+  font-size: 0.8rem;
+  text-decoration: line-through;
+}
+body main .content .products .product button {
+  width: 120px;
+  align-self: end;
+  background-color: hotpink;
+  padding: 0.5rem 1rem;
+  border-style: none;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+body main .content .products .product button:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 576px) {
+  body main .content .products .product {
+    width: 41%;
+  }
+}
+@media (min-width: 768px) {
+  body header {
+    border-bottom-style: none;
+  }
+  body header .nav-toggler {
+    display: none;
+  }
+  body main nav {
+    position: static;
+    left: initial;
+    top: initial;
+    height: auto;
+    display: flex;
+    width: 20%;
+  }
+  body main .content {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  body main .content .products .product {
+    width: 27%;
+  }
+}
+@media (min-width: 1200px) {
+  body main .content .products .product {
+    width: 28%;
+  }
+}
+@media (min-width: 1400px) {
+  body main nav {
+    width: 10%;
+  }
+  body main .content {
+    width: 90%;
+  }
+  body main .content .products .product {
+    width: 23%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

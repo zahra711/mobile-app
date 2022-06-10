@@ -3,6 +3,9 @@ body {
   margin: 0;
   padding: 0;
 }
+body .toggle-switch > label::before, body .toggle-switch-label::before {
+  border-color: hotpink;
+}
 body header {
   border-bottom: 1px solid gray;
 }

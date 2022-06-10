@@ -4,6 +4,9 @@ body {
   font-size: 14px;
   margin: 0;
   padding: 0;
+  .toggle-switch > label::before, .toggle-switch-label::before {
+    border-color: hotpink;
+  }
   header {
     border-bottom: 1px solid gray;
     .nav-toggler {
